@@ -87,3 +87,12 @@ plt.xlabel('Total de Avaliações', fontsize=10, labelpad=10)
 plt.ylabel('Marcas', fontsize=10, labelpad=10)
 plt.tight_layout()
 plt.show()
+
+#    GRÁFICO DE REGRESSÃO
+plt.figure(figsize=(8, 6))
+sns.regplot(x='Nota', y='Qtd_Vendidos_Cod', data=df, scatter_kws={'alpha': 0.6}, line_kws={'color': 'red'})
+plt.title('Relação entre Nota e Vendas')
+plt.xlabel('Nota do Produto')
+plt.ylabel('Quantidade Vendida')
+plt.tight_layout()
+plt.show()
